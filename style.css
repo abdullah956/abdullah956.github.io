@@ -1,0 +1,105 @@
+/* importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/* general styling */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* transition on a and buttons*/
+a, .btn {
+    transition: all 300ms ease; 
+    /* this is so that all the scrolling is smooth in page */
+}
+
+/* navigation */
+nav , .nav-links{
+    display: flex;
+    /* this is so that the elements comes left to right after one and other */
+}
+nav {
+    justify-content: space-around; 
+    /* this is so that the child of nav can be spaced from each other */
+    align-items: center;
+    /* now that childs area space around we mafe them o that come in center */
+    height: 17vh;
+    /* just giving viewport height */
+}
+
+.nav-links{
+    gap: 2rem;
+    /* gave gap in nav links */
+    list-style: none;
+    /* removed their styling */
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    /* removing a tag default styling */
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    /* underline is a bit too tight so for spacing it out */
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* menu  */
+
+#hamburger-nav {
+    display: none;
+    /* display is none so that it does not show on page by default */
+}
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
