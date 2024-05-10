@@ -207,6 +207,15 @@ section {
     gap: 1rem;
 }
 
+#socials-container .emailpic {
+    cursor: pointer;
+    height: 2.7rem;
+}
+#socials-container .githubpic {
+    cursor: pointer;
+    height: 2.7rem;
+}
+
 
 /* icons */
 
@@ -417,7 +426,7 @@ v\\#contact {
 }
 
 .email-icon {
-    height: 2.5rem;
+    height: 3.3rem;
 }
 
 /* footer */
