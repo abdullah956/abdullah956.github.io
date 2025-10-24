@@ -166,8 +166,11 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+    align-items: center;
+    gap: 3rem;
+    height: auto;
+    min-height: 70vh;
+    padding: 2rem 0;
 }
 
 .section__pic-container {
@@ -198,12 +201,14 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    margin: 0.5rem 0;
 }
 
 #socials-container {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
     gap: 1rem;
 }
 
@@ -230,6 +235,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -280,9 +286,9 @@ section {
 }
 
 .about-containers {
-    gap: 3rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    gap: 2.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .about-details-container {
@@ -310,9 +316,11 @@ section {
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
     text-align: center;
+}
+
+#profile .details-container {
+    padding: 1.2rem 1.5rem;
 }
 
 .section-container {
@@ -338,6 +346,11 @@ section {
 /* experience  */
 #experience {
     position: relative;
+    margin-bottom: -2rem;
+}
+
+#experience .details-container {
+    border: rgb(163, 163, 163) 0.1rem solid;
 }
 
 .experience-sub-title {
@@ -376,10 +389,16 @@ article .icon {
 /* projects */
 #projects {
     position: relative;
+    padding-top: 2vh;
+}
+
+#projects .about-containers {
+    gap: 3rem;
+    margin-bottom: 2rem;
 }
 
 .color-container {
-    border-color: rgb(163, 163, 163);
+    border: rgb(163, 163, 163) 0.1rem solid;
     background: rgb(250, 250, 250);
 }
 
@@ -400,21 +419,22 @@ article .icon {
 }
 
 /* contact */
-v\\#contact {
+#contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: auto;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: (250, 250, 250);
-    margin: 2rem auto;
+    border: rgb(163, 163, 163) 0.1rem solid;
+    background: rgb(250, 250, 250);
+    margin: 1.5rem auto;
     padding: 0.5rem;
 }
 
@@ -440,7 +460,8 @@ v\\#contact {
 
 /* footer */
 footer {
-    height: 26vh;
+    height: auto;
+    padding: 2rem 1rem;
     margin: 0 1rem;
 }
 

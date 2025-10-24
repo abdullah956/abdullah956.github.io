@@ -1,7 +1,7 @@
 @media screen and (max-width: 1400px) {
     #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
+        min-height: 60vh;
+        margin-bottom: 4rem;
     }
 
     .about-containers {
@@ -59,14 +59,19 @@
 
 @media screen and (max-width: 600px) {
 
-    #contact,
+    #contact {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
     footer {
-        height: 40vh;
+        padding: 1.5rem 1rem;
     }
 
     #profile {
-        height: 83vh;
+        min-height: 50vh;
         margin-bottom: 0;
+        gap: 2rem;
     }
 
     article {
