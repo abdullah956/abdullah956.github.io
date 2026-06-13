@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Abdullah Arshed, an AI Engineer specializing in automation, backend systems, and AI-powered products."
+    />
+    <title>Abdullah Arshed | AI Engineer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- nav -->
     <nav id="desktop-nav">
-      <div class="logo">My Portfolio</div>
+      <div class="logo">Abdullah Arshed</div>
       <div>
         <ul class="nav-links">
+          <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -22,53 +27,67 @@
     </nav>
     <!-- menu -->
     <nav id="hamburger-nav">
-      <div class="logo">My Portfolio</div>
+      <div class="logo">Abdullah Arshed</div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+        <button
+          class="hamburger-icon"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          onclick="toggleMenu()"
+        >
           <span></span>
           <span></span>
           <span></span>
-        </div>
-        <div class="menu-links">
+        </button>
+        <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </ul>
       </div>
     </nav>
     <!-- section -->
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/pp.png" alt="John Doe profile picture" />
+        <img src="./assets/pp.png" alt="Abdullah Arshed profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Abdullah Arshed</h1>
         <p class="section__text__p2">AI Engineer</p>
         <div class="btn-container">
-          <button
+          <a
             class="btn btn-color-2"
-            onclick="window.open('./assets/CV.pdf')"
+            href="./assets/CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Download CV
-          </button>
+          </a>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="email"
-            class="emailpic"
-            onclick="location.href='https://www.linkedin.com/in/abdullah-arshed-b3893b309/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="githubpic"
-            onclick="location.href='https://github.com/abdullah956'"
-          />
+          <a
+            href="https://www.linkedin.com/in/abdullah-arshed-b3893b309/"
+            class="social-link"
+            aria-label="Abdullah Arshed LinkedIn profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/linkedin.png" alt="" class="social-icon" />
+          </a>
+          <a
+            href="https://github.com/abdullah956"
+            class="social-link"
+            aria-label="Abdullah Arshed GitHub profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/github.png" alt="" class="social-icon" />
+          </a>
         </div>
-        <div class="about-details-container">
+        <div id="about" class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
               <img
@@ -77,7 +96,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>4+ years <br />Automation Development</p>
+              <p>4+ years <br />AI &amp; Automation Development</p>
             </div>
             <div class="details-container">
               <img
@@ -86,7 +105,7 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>BSCS. Computer Science Bachelors Degree<br /></p>
+              <p>BSCS, Bachelor's Degree in Computer Science<br /></p>
             </div>
           </div>
         </div>
@@ -131,14 +150,14 @@
               <article>
                 <img src="./assets/lang.png" alt="Experience icon" class="icon" />
                 <div>
-                  <h3>Lang Chain Lang Graph</h3>
+                  <h3>LangChain / LangGraph</h3>
                 </div>
               </article>
               
               <article>
                 <img src="./assets/pinecone.png" alt="Experience icon" class="icon" />
                 <div>
-                  <h3>pinecone</h3>
+                  <h3>Pinecone</h3>
                 </div>
               </article>
               <article>
@@ -162,7 +181,7 @@
               <article>
                 <img src="./assets/pipecat.png" alt="Experience icon" class="icon" />
                 <div>
-                  <h3>PipeCat</h3>
+                  <h3>Pipecat</h3>
                 </div>
               </article>
               <article>
@@ -194,7 +213,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Github</h3>
+                  <h3>GitHub</h3>
                 </div>
               </article>
               <article>
@@ -322,42 +341,34 @@
           <div class="details-container color-container">
             <img
               src="assets/2456.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="2456.ai project screenshot"
+              class="project-img"
             />
             <h2 class="experience-sub-title project-title">2456.ai</h2>
             <p class="lead description">
-              A next generation Al adoption platform that bridges the gap between discovery and implementation of Al, automation and no-code solutions. Users input a plain-language need (e.g., "automate my marketing workflows"), and the system returns tailored tool recommendations, ranked matches and step-by-step guidance for integration.
+              A next-generation AI adoption platform that bridges the gap
+              between discovery and implementation of AI, automation, and
+              no-code solutions. Users input a plain-language need, and the
+              system returns tailored tool recommendations, ranked matches, and
+              step-by-step guidance for integration.
             </p>
             <div class="btn-container project-btn-container">
               
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.2456.ai/'"
+                href="https://www.2456.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Live
-              </button>
+              </a>
             </div>
           </div>
           <div class="details-container color-container">
             <img
               src="assets/matter.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="Matter AI project screenshot"
+              class="project-img"
             />
             <h2 class="experience-sub-title project-title">Matter AI</h2>
             <p class="lead description">
@@ -365,39 +376,39 @@
             </p>
             <div class="btn-container project-btn-container">
               
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.usematter.ai/'"
+                href="https://www.usematter.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Live
-              </button>
+              </a>
             </div>
           </div>
           <div class="details-container color-container">
             <img
               src="assets/ilham.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="Ilham project screenshot"
+              class="project-img"
             />
             <h2 class="experience-sub-title project-title">Ilham</h2>
             <p class="lead description">
-              Al driven automation platform that uses natural language to streamline business workflows, integrate enterprise tools, and enable intelligent task execution through a conversational interface.
+              AI-driven automation platform that uses natural language to
+              streamline business workflows, integrate enterprise tools, and
+              enable intelligent task execution through a conversational
+              interface.
             </p>
             <div class="btn-container project-btn-container">
               
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://app.llham.com/'"
+                href="https://app.llham.com/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Live
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -405,15 +416,8 @@
           <div class="details-container color-container">
             <img
               src="assets/transparagent.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="Transparagent project screenshot"
+              class="project-img"
             />
             <h2 class="experience-sub-title project-title">Transparagent</h2>
             <p class="lead description">
@@ -425,32 +429,29 @@
               Django for the backend, with a HTML, CSS, and JavaScript frontend.
             </p>
             <div class="btn-container project-btn-container">
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/abdullah956/dj-spyglass'"
+                href="https://github.com/abdullah956/dj-spyglass"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Github
-              </button>
-              <button
+                GitHub
+              </a>
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.transparagent.com/'"
+                href="https://www.transparagent.com/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Live
-              </button>
+              </a>
             </div>
           </div>
           <div class="details-container color-container">
             <img
               src="assets/kylinoracle.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="KylinOracle project screenshot"
+              class="project-img"
             />
             <h2 class="experience-sub-title project-title">KylinOracle</h2>
             <p class="lead description">
@@ -462,32 +463,29 @@
               management.
             </p>
             <div class="btn-container project-btn-container">
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/abdullah956/dj-kylinoracle'"
+                href="https://github.com/abdullah956/dj-kylinoracle"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Github
-              </button>
-              <button
+                GitHub
+              </a>
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.kylinoracle.com/'"
+                href="https://www.kylinoracle.com/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Live
-              </button>
+              </a>
             </div>
           </div>
           <div class="details-container color-container">
             <img
               src="assets/byzino.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="Byzino project screenshot"
+              class="project-img"
             />
             <h2 class="experience-sub-title project-title">Byzino</h2>
             <p class="lead description">
@@ -499,18 +497,22 @@
               browsing and purchasing.
             </p>
             <div class="btn-container project-btn-container">
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/abdullah956/dj-byzino'"
+                href="https://github.com/abdullah956/dj-byzino"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Github
-              </button>
-              <button
+                GitHub
+              </a>
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.byzino.com/'"
+                href="https://www.byzino.com/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Live
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -518,15 +520,8 @@
           <div class="details-container color-container">
             <img
               src="assets/shopitnow.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="ShopItNow project screenshot"
+              class="project-img"
             />
             <h2 class="experience-sub-title project-title">ShopItNow</h2>
             <p class="lead description">
@@ -537,33 +532,30 @@
               secure Stripe payment integration.
             </p>
             <div class="btn-container project-btn-container">
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/abdullah956/dj-itnow'"
+                href="https://github.com/abdullah956/dj-itnow"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Github
-              </button>
-              <button
+                GitHub
+              </a>
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://shopitnow.online/'"
+                href="https://shopitnow.online/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Live
-              </button>
+              </a>
             </div>
           </div>
 
           <div class="details-container color-container">
             <img
               src="assets/lifequality.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="LifeQuality project screenshot"
+              class="project-img"
             />
             <h2 class="experience-sub-title project-title">LifeQuality</h2>
             <p class="lead description">
@@ -574,33 +566,30 @@
               management for a premium shopping experience.
             </p>
             <div class="btn-container project-btn-container">
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/abdullah956/dj-lifequality'"
+                href="https://github.com/abdullah956/dj-lifequality"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Github
-              </button>
-              <button
+                GitHub
+              </a>
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://lifequality.jo/'"
+                href="https://lifequality.jo/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Live
-              </button>
+              </a>
             </div>
           </div>
 
           <div class="details-container color-container">
             <img
               src="assets/language.png"
-              alt=""
-              style="
-                width: 95%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="LanguageAcademy project screenshot"
+              class="project-img project-img--narrow"
             />
             <h2 class="experience-sub-title project-title">
               LanguageAcademy
@@ -613,12 +602,14 @@
               conducting language sessions.
             </p>
             <div class="btn-container project-btn-container">
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://thelanguageacademy.org/'"
+                href="https://thelanguageacademy.org/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Live
-              </button>
+              </a>
             </div>
           </div>
 
@@ -629,15 +620,8 @@
           <div class="details-container color-container">
             <img
               src="assets/g6pd.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="G6PD project screenshot"
+              class="project-img"
             />
             <h2 class="experience-sub-title project-title">G6PD</h2>
             <p class="lead description">
@@ -648,27 +632,22 @@
               interface for safer daily choices.
             </p>
             <div class="btn-container project-btn-container">
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/abdullah956/dj-g6pd'"
+                href="https://github.com/abdullah956/dj-g6pd"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Github
-              </button>
+                GitHub
+              </a>
             </div>
           </div>
 
           <div class="details-container color-container">
             <img
               src="assets/crime.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="Crime Alert project screenshot"
+              class="project-img"
             />
             <h2 class="experience-sub-title project-title">Crime Alert</h2>
             <p class="lead description">
@@ -679,27 +658,22 @@
               safety awareness and decision-making.
             </p>
             <div class="btn-container project-btn-container">
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/abdullah956/dj-ml-crime'"
+                href="https://github.com/abdullah956/dj-ml-crime"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Github
-              </button>
+                GitHub
+              </a>
             </div>
           </div>
 
           <div class="details-container color-container">
             <img
               src="assets/medi.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin-bottom: 15px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                object-fit: cover;
-              "
+              alt="Medi Predict project screenshot"
+              class="project-img"
             />
             <h2 class="experience-sub-title project-title">Medi Predict</h2>
             <p class="lead description">
@@ -711,12 +685,14 @@
               proactive healthcare.
             </p>
             <div class="btn-container project-btn-container">
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/abdullah956/dj-ml-disease'"
+                href="https://github.com/abdullah956/dj-ml-disease"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Github
-              </button>
+                GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -734,16 +710,16 @@
             class="icon contact-icon email-icon"
           />
           <p>
-            <a href="">abdullaharshed956@gmail.com</a>
+            <a href="mailto:abdullaharshed956@gmail.com">abdullaharshed956@gmail.com</a>
           </p>
         </div>
         <div class="contact-info-container">
           <img
             src="./assets/phonebalck.png"
-            alt="LinkedIn icon"
+            alt="Phone icon"
             class="icon contact-icon"
           />
-          <p><a href="">+92-3156255603</a></p>
+          <p><a href="tel:+923156255603">+92-3156255603</a></p>
         </div>
       </div>
     </section>
@@ -753,6 +729,7 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
+            <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
