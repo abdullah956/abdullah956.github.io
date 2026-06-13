@@ -14,7 +14,7 @@
 
   .hero-copy .title,
   .section__text__p2,
-  .about-details-container {
+  .intro-focus {
     margin-right: auto;
     margin-left: auto;
   }
@@ -45,6 +45,10 @@
   }
 
   .proof-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-focus {
     grid-template-columns: 1fr;
   }
 
@@ -112,6 +116,14 @@
 
   .section__text__p2 {
     font-size: 1rem;
+  }
+
+  .intro-focus {
+    padding: 0.9rem;
+  }
+
+  .intro-focus li {
+    font-size: 0.76rem;
   }
 
   .hero-tags span {
