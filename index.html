@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Abdullah Arshed, an AI Engineer specializing in automation, backend systems, and AI-powered products."
+      content="Portfolio of Abdullah Arshed, an AI Engineer building voice agents, automation tools, and backend systems with Python, Django, FastAPI, and LangGraph."
     />
+    <meta property="og:title" content="Abdullah Arshed | AI Engineer" />
+    <meta
+      property="og:description"
+      content="Voice agents, workflow automation, knowledge-base assistants, and production backend systems."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Abdullah Arshed | AI Engineer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- nav -->
-    <nav id="desktop-nav">
-      <div class="logo">Abdullah Arshed</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+    <a class="skip-link" href="#profile">Skip to content</a>
+    <canvas id="ink-canvas" aria-hidden="true"></canvas>
+
+    <nav id="desktop-nav" aria-label="Primary navigation">
+      <a class="logo" href="#profile">Abdullah Arshed</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work-history">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <!-- menu -->
-    <nav id="hamburger-nav">
-      <div class="logo">Abdullah Arshed</div>
+
+    <nav id="hamburger-nav" aria-label="Mobile navigation">
+      <a class="logo" href="#profile">Abdullah Arshed</a>
       <div class="hamburger-menu">
         <button
           class="hamburger-icon"
@@ -42,701 +49,703 @@
         </button>
         <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#work-history" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <!-- section -->
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/pp.png" alt="Abdullah Arshed profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Abdullah Arshed</h1>
-        <p class="section__text__p2">AI Engineer</p>
-        <div class="btn-container">
-          <a
-            class="btn btn-color-2"
-            href="./assets/CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download CV
-          </a>
-        </div>
-        <div id="socials-container">
-          <a
-            href="https://www.linkedin.com/in/abdullah-arshed-b3893b309/"
-            class="social-link"
-            aria-label="Abdullah Arshed LinkedIn profile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="./assets/linkedin.png" alt="" class="social-icon" />
-          </a>
-          <a
-            href="https://github.com/abdullah956"
-            class="social-link"
-            aria-label="Abdullah Arshed GitHub profile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="./assets/github.png" alt="" class="social-icon" />
-          </a>
-        </div>
-        <div id="about" class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>4+ years <br />AI &amp; Automation Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>BSCS, Bachelor's Degree in Computer Science<br /></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about -->
-    <!-- experience -->
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <div class="article-container">
-              
-              <article>
-                <img
-                  src="./assets/python.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/django.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Django</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/fast.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>FastAPI</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/lang.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>LangChain / LangGraph</h3>
-                </div>
-              </article>
-              
-              <article>
-                <img src="./assets/pinecone.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Pinecone</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/streamlit.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Streamlit</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/n8n.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>n8n</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/make.jpeg" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Make</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/pipecat.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Pipecat</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/docker.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Docker</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/supabase.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Supabase</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/graphql.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>GraphQL</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/github.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>GitHub</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/celery.jpeg" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Celery</h3>
-                </div>
-              </article>
-              
-              <article>
-                <img src="./assets/strawberry.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Strawberry</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/redis.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Redis</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/scrapy.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Scrapy</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/postgress.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Postgres</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/php.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PHP</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/laravel.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Laravel</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/vue.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Vue</h3>
-                </div>
-              </article>
-              
-          
-              
-              
-              <article>
-                <img src="./assets/ml.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>ML</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/sql.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/mongo.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Mongo</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/react.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/next.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Next.js</h3>
-                </div>
-              </article>
-              
-           
-              
-              
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- projects -->
-    <section id="projects">
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <img
-              src="assets/2456.png"
-              alt="2456.ai project screenshot"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">2456.ai</h2>
-            <p class="lead description">
-              A next-generation AI adoption platform that bridges the gap
-              between discovery and implementation of AI, automation, and
-              no-code solutions. Users input a plain-language need, and the
-              system returns tailored tool recommendations, ranked matches, and
-              step-by-step guidance for integration.
-            </p>
-            <div class="btn-container project-btn-container">
-              
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://www.2456.ai/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <img
-              src="assets/matter.png"
-              alt="Matter AI project screenshot"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Matter AI</h2>
-            <p class="lead description">
-              Built transcription and RAG pipeline architecture integrating Recall AI to capture and process meeting and Slack huddle transcripts. Designed data ingestion and retrieval workflows enabling Slack bot users to query and extract insights from LLM-powered knowledge base.
-            </p>
-            <div class="btn-container project-btn-container">
-              
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://www.usematter.ai/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <img
-              src="assets/ilham.png"
-              alt="Ilham project screenshot"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Ilham</h2>
-            <p class="lead description">
-              AI-driven automation platform that uses natural language to
-              streamline business workflows, integrate enterprise tools, and
-              enable intelligent task execution through a conversational
-              interface.
-            </p>
-            <div class="btn-container project-btn-container">
-              
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://app.llham.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <img
-              src="assets/transparagent.png"
-              alt="Transparagent project screenshot"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Transparagent</h2>
-            <p class="lead description">
-              Transparagent is a modern real estate platform where professional
-              agents and assistants collaborate to help homeowners find the
-              perfect home. It leverages advanced data analytics for smarter
-              property decisions and integrates secure Stripe payments for safe,
-              seamless transactions. The platform is built using Python and
-              Django for the backend, with a HTML, CSS, and JavaScript frontend.
-            </p>
-            <div class="btn-container project-btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/abdullah956/dj-spyglass"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://www.transparagent.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <img
-              src="assets/kylinoracle.png"
-              alt="KylinOracle project screenshot"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">KylinOracle</h2>
-            <p class="lead description">
-              KylinOracle is a specialized e-commerce platform for Chinese
-              products, offering a seamless shopping experience for global
-              users. Developed with Python and Django on the backend and HTML,
-              CSS, and JavaScript on the frontend, it features secure PayPal
-              integration, intuitive product browsing, and reliable order
-              management.
-            </p>
-            <div class="btn-container project-btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/abdullah956/dj-kylinoracle"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://www.kylinoracle.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <img
-              src="assets/byzino.png"
-              alt="Byzino project screenshot"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Byzino</h2>
-            <p class="lead description">
-              Byzino is a sleek and modern beauty product website designed to
-              showcase and sell cosmetics and skincare items. Built with Python
-              and Django for the backend and a HTML, CSS, and JavaScript
-              frontend, it offers a smooth user experience, secure Stripe
-              payment integration, and clean data-driven design for product
-              browsing and purchasing.
-            </p>
-            <div class="btn-container project-btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/abdullah956/dj-byzino"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://www.byzino.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <img
-              src="assets/shopitnow.png"
-              alt="ShopItNow project screenshot"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">ShopItNow</h2>
-            <p class="lead description">
-              ShopItNow is an elegant e-commerce platform focused on home
-              essentials and decor. Developed using Python and Django for the
-              backend and a HTML, CSS, and JavaScript frontend, it delivers a
-              user-friendly shopping experience with powerful data handling and
-              secure Stripe payment integration.
-            </p>
-            <div class="btn-container project-btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/abdullah956/dj-itnow"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://shopitnow.online/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </div>
 
-          <div class="details-container color-container">
-            <img
-              src="assets/lifequality.png"
-              alt="LifeQuality project screenshot"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">LifeQuality</h2>
-            <p class="lead description">
-              LifeQuality is a refined e-commerce platform for beauty and
-              wellness products. Built with Python and Django on the backend and
-              HTML, CSS, and JavaScript on the frontend, it offers smooth
-              navigation, secure Stripe payments, and efficient product
-              management for a premium shopping experience.
-            </p>
-            <div class="btn-container project-btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/abdullah956/dj-lifequality"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://lifequality.jo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <img
-              src="assets/language.png"
-              alt="LanguageAcademy project screenshot"
-              class="project-img project-img--narrow"
-            />
-            <h2 class="experience-sub-title project-title">
-              LanguageAcademy
-            </h2>
-            <p class="lead description">
-              The Language Academy is a platform that connects language learners
-              with qualified teachers who offer personalized lessons. Built with
-              PHP, Laravel, and SQL, it provides efficient teacher management,
-              secure user interactions, and a smooth experience for booking and
-              conducting language sessions.
-            </p>
-            <div class="btn-container project-btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://thelanguageacademy.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live
-              </a>
-            </div>
-          </div>
-
-          
-        </div>
-
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <img
-              src="assets/g6pd.png"
-              alt="G6PD project screenshot"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">G6PD</h2>
-            <p class="lead description">
-              G6PD is a health-focused platform that uses OCR scanning to
-              analyze product labels and assess whether they are safe for
-              individuals with G6PD deficiency. Built with Python and Django, it
-              provides instant feedback, health tips, and a user-friendly
-              interface for safer daily choices.
-            </p>
-            <div class="btn-container project-btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/abdullah956/dj-g6pd"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <img
-              src="assets/crime.png"
-              alt="Crime Alert project screenshot"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Crime Alert</h2>
-            <p class="lead description">
-              Crime Alert is a data-driven platform that analyzes crime datasets
-              to predict and visualize potential criminal activity trends.
-              Developed with Python and Django, it offers interactive
-              dashboards, prediction models, and insightful analytics to support
-              safety awareness and decision-making.
-            </p>
-            <div class="btn-container project-btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/abdullah956/dj-ml-crime"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <img
-              src="assets/medi.png"
-              alt="Medi Predict project screenshot"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Medi Predict</h2>
-            <p class="lead description">
-              Medi Predict is an AI-powered platform for disease prediction and
-              health assessment. Using medical datasets, it features an
-              intelligent bot that interacts with users, analyzes symptoms, and
-              provides predictive insights. Built with Python and Django, it
-              delivers accurate evaluations and a user-friendly experience for
-              proactive healthcare.
-            </p>
-            <div class="btn-container project-btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/abdullah956/dj-ml-disease"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact -->
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
+    <main>
+      <section id="profile" class="hero-section">
+        <div class="section__pic-container hero-portrait">
           <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
+            src="./assets/pp.png"
+            width="1045"
+            height="1045"
+            alt="Abdullah Arshed profile picture"
           />
-          <p>
-            <a href="mailto:abdullaharshed956@gmail.com">abdullaharshed956@gmail.com</a>
+        </div>
+        <div class="section__text hero-copy">
+          <p class="section__text__p1 eyebrow">AI Agent Specialist / AI Engineer</p>
+          <h1 class="title">Abdullah Arshed</h1>
+          <p class="section__text__p2">
+            I build AI agents, automation pipelines, voice systems, and
+            Django/FastAPI backends. I currently work as an AI Agent Specialist
+            at Builder Lead Converter, after consulting with CodeSphere and
+            building production AI platforms at Artilence.
           </p>
+          <div class="hero-tags" aria-label="Core expertise">
+            <span>AI agents</span>
+            <span>Automation pipelines</span>
+            <span>Voice systems</span>
+            <span>MCP integrations</span>
+            <span>Django / FastAPI</span>
+          </div>
+          <div class="btn-container hero-actions">
+            <a class="btn btn-color-1" href="#contact">Contact Me</a>
+            <a
+              class="btn btn-color-2"
+              href="./assets/Abdullah%20Arshed%20AI%20Engineer%20CV.docx"
+              download="Abdullah Arshed AI Engineer CV.docx"
+            >
+              Download CV
+            </a>
+          </div>
+          <div id="socials-container">
+            <a
+              href="https://www.linkedin.com/in/abdullah-arshed-b3893b309/"
+              class="social-link"
+              aria-label="Abdullah Arshed LinkedIn profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/linkedin.png" alt="" class="social-icon" />
+            </a>
+            <a
+              href="https://github.com/abdullah956"
+              class="social-link"
+              aria-label="Abdullah Arshed GitHub profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/github.png" alt="" class="social-icon" />
+            </a>
+          </div>
+          <div id="about" class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>4+ years<br />AI agents &amp; backend systems</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>BSc Computer Science<br />KFUEIT, 2021-2025</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/phonebalck.png"
-            alt="Phone icon"
-            class="icon contact-icon"
-          />
-          <p><a href="tel:+923156255603">+92-3156255603</a></p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- footer -->
+      <section class="proof-strip" aria-label="Selected proof metrics">
+        <div class="proof-card">
+          <span>Scale</span>
+          <strong>15,000+</strong>
+          <p>tools processed by agent workflows</p>
+        </div>
+        <div class="proof-card">
+          <span>Voice AI</span>
+          <strong>sub-1.2s</strong>
+          <p>end-to-end voice response latency</p>
+        </div>
+        <div class="proof-card">
+          <span>Performance</span>
+          <strong>90%</strong>
+          <p>faster API response times</p>
+        </div>
+        <div class="proof-card">
+          <span>Operations</span>
+          <strong>~60%</strong>
+          <p>less manual referral work</p>
+        </div>
+        <div class="proof-card">
+          <span>Automation</span>
+          <strong>40+</strong>
+          <p>pipeline templates shipped</p>
+        </div>
+        <div class="proof-card">
+          <span>Experience</span>
+          <strong>4+ yrs</strong>
+          <p>building AI and backend systems</p>
+        </div>
+      </section>
+
+      <section id="work-history">
+        <p class="section__text__p1 eyebrow">Work History</p>
+        <h1 class="title">Experience</h1>
+        <div class="timeline-grid">
+          <article class="details-container timeline-card">
+            <span class="timeline-date">May 2026 - Present</span>
+            <h3>AI Agent Specialist</h3>
+            <p class="timeline-company">Builder Lead Converter</p>
+            <div class="timeline-meta">
+              <span>Full-time</span>
+              <span>Prior Lake, Minnesota</span>
+              <span>Remote</span>
+            </div>
+            <p>
+              Architecting internal AI agents for social media, website SEO,
+              UI/UX audits, and lead-generation workflows from stakeholder
+              requirements through production-ready rollout.
+            </p>
+            <div class="timeline-tags">
+              <span>System Architecture</span>
+              <span>Workflow Optimization</span>
+              <span>System Integration</span>
+              <span>Requirement Translation</span>
+            </div>
+          </article>
+
+          <article class="details-container timeline-card">
+            <span class="timeline-date">Feb 2026 - May 2026</span>
+            <h3>AI Engineer &amp; AI Consultant</h3>
+            <p class="timeline-company">CodeSphere</p>
+            <div class="timeline-meta">
+              <span>Part-time</span>
+              <span>Seattle, Washington, United States</span>
+              <span>Remote</span>
+            </div>
+            <p>
+              Designed AI workflows, multi-agent systems, and custom MCP
+              servers to connect AI agents with data sources and tools.
+            </p>
+            <div class="timeline-tags">
+              <span>Model Context Protocol</span>
+              <span>Systems Design</span>
+              <span>Architectural Design</span>
+              <span>Multi-agent Systems</span>
+            </div>
+          </article>
+
+          <article class="details-container timeline-card">
+            <span class="timeline-date">Jun 2025 - Feb 2026</span>
+            <h3>AI Software Engineer</h3>
+            <p class="timeline-company">Artilence</p>
+            <div class="timeline-meta">
+              <span>Full-time</span>
+              <span>Lahore, Punjab, Pakistan</span>
+              <span>On-site</span>
+            </div>
+            <p>
+              Built AI applications and intelligent workflows with LangChain,
+              FastAPI, Pinecone, Pipecat, LangGraph, n8n, and Make.com.
+            </p>
+            <div class="timeline-tags">
+              <span>Vector Databases</span>
+              <span>FastAPI</span>
+              <span>Data Engineering</span>
+              <span>Data Scraping</span>
+            </div>
+          </article>
+
+          <article class="details-container timeline-card">
+            <span class="timeline-date">Apr 2023 - Jun 2025</span>
+            <h3>Software Engineer</h3>
+            <p class="timeline-company">Devloop Tech</p>
+            <div class="timeline-meta">
+              <span>Full-time</span>
+              <span>Rahim Yar Khan District, Punjab, Pakistan</span>
+              <span>On-site</span>
+            </div>
+            <p>
+              Developed Django applications, DRF APIs, backend optimizations,
+              and ML model integrations for production web systems.
+            </p>
+            <div class="timeline-tags">
+              <span>Django REST Framework</span>
+              <span>API Development</span>
+              <span>PostgreSQL</span>
+              <span>Relational Databases</span>
+            </div>
+          </article>
+
+          <article class="details-container timeline-card">
+            <span class="timeline-date">Nov 2021 - Apr 2023</span>
+            <h3>Backend Engineer</h3>
+            <p class="timeline-company">Devicon Software House</p>
+            <div class="timeline-meta">
+              <span>Full-time</span>
+              <span>Rahimyar Khan, Punjab, Pakistan</span>
+              <span>On-site</span>
+            </div>
+            <p>
+              Built and maintained backend systems with Laravel, PHP, SQL, and
+              full-stack web application workflows.
+            </p>
+            <div class="timeline-tags">
+              <span>Backend Development</span>
+              <span>Database Design</span>
+              <span>Web Services API</span>
+              <span>Scalable Systems</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects">
+        <p class="section__text__p1 eyebrow">Resume Projects</p>
+        <h1 class="title">Projects, Tools &amp; Architecture</h1>
+        <div class="experience-details-container">
+          <div class="project-list">
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Builder Lead Converter</p>
+              <h2 class="experience-sub-title project-title">
+                Audit &amp; Lead Generation Agents
+              </h2>
+              <p class="lead description">
+                Internal agent system for social media audits, website SEO
+                reviews, UI/UX checks, and lead-generation workflows.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Stakeholder intake, website and social profile analysis,
+                  audit scoring, recommendation generation, lead qualification,
+                  and report-ready output for internal teams.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>
+                  AI agents, business process automation, SEO audit logic,
+                  UI/UX review flows, lead generation pipeline, reporting
+                  automation.
+                </p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">CodeSphere</p>
+              <h2 class="experience-sub-title project-title">
+                CS Voice Agent
+              </h2>
+              <p class="lead description">
+                Production inbound voice agent for booking, SMS confirmations,
+                and human escalation, engineered for sub-1.2s response latency.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Isolated per-call WebSocket pipelines, LangGraph state
+                  machine, booking persistence, SMS flow, and callback queue.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>
+                  Twilio, Deepgram Nova-2, ElevenLabs, LangGraph, PostgreSQL,
+                  WebSockets, Python.
+                </p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">CodeSphere</p>
+              <h2 class="experience-sub-title project-title">WOR AI</h2>
+              <p class="lead description">
+                Voice and chat referral management system connected to a
+                company knowledge base, reducing manual processing by about 60%.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Event-driven referral intake, WebSocket interaction layer,
+                  knowledge-base lookup, automated response, and human review.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>WebSockets, voice AI, knowledge base, backend APIs.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">CodeSphere</p>
+              <h2 class="experience-sub-title project-title">Theory Lab</h2>
+              <p class="lead description">
+                No-code visual automation platform with 40+ reusable templates
+                for AI pipeline work.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Node-based chaining, PDF processing, vector ingestion, data
+                  transformation, and real-time WebSocket monitoring.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>WebSockets, pipeline builder, PDF/vector workflows.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Artilence</p>
+              <h2 class="experience-sub-title project-title">2456.ai</h2>
+              <p class="lead description">
+                AI adoption platform where users describe a need and receive
+                ranked tool recommendations plus implementation steps.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  10 coordinated agents scrape 15,000+ tools, index tool data,
+                  rank matches, and convert plain language into workflows.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>Apify, multi-agent system, automation workflows.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Artilence</p>
+              <h2 class="experience-sub-title project-title">UseMatter.ai</h2>
+              <p class="lead description">
+                Meeting transcription and Slack knowledge bot that lets teams
+                ask questions over meetings and huddles.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Recall AI ingestion, transcript processing, RAG retrieval,
+                  Slack bot query flow, and Retell voice query support.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>Recall AI, RAG, Slack bot, Retell AI, STT/TTS.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Artilence</p>
+              <h2 class="experience-sub-title project-title">Edvenity</h2>
+              <p class="lead description">
+                Voice-enabled AI recruiting platform for interviews, dynamic
+                questions, scoring, and resume matching.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Interview voice agent, dynamic question flow, rubric scoring,
+                  semantic resume matching, and candidate evaluation pipeline.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>Vapi, ElevenLabs, Pipecat, Twilio, semantic matching.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Artilence</p>
+              <h2 class="experience-sub-title project-title">Ilham</h2>
+              <p class="lead description">
+                Enterprise workflow automation platform that interprets natural
+                language and executes business workflows.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  5-agent workflow system with natural-language interpretation,
+                  planning, execution, and tool integration.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>AI agents, workflow automation, enterprise integrations.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Artilence</p>
+              <h2 class="experience-sub-title project-title">SooqSense</h2>
+              <p class="lead description">
+                Multi-tenant AI content platform for blog pipelines, LinkedIn
+                automation, proposal generation, and analytics.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Django 5 + ASGI platform, 5-agent content pipeline, real-time
+                  Django Channels streaming, Celery schedules, RAG, and
+                  observability.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>
+                  Django, ASGI, CrewAI, LangGraph, Pinecone, Celery, LangSmith,
+                  PostHog.
+                </p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Devloop Tech</p>
+              <h2 class="experience-sub-title project-title">Transparagent</h2>
+              <p class="lead description">
+                Real estate analytics platform with live KPI dashboards, agent
+                performance tracking, client reports, and payments.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Django REST API layer, reporting dashboards, Stripe payment
+                  integration, and data aggregation workflows.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>Django REST Framework, PostgreSQL, Stripe, dashboards.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Devloop Tech</p>
+              <h2 class="experience-sub-title project-title">Byzino</h2>
+              <p class="lead description">
+                Full-stack beauty e-commerce platform with product catalogue,
+                cart logic, order management, and checkout.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Django e-commerce backend, product/order workflows, Stripe
+                  checkout, and optimized PostgreSQL queries.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>Django, PostgreSQL, Stripe, HTML/CSS/JavaScript.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Devloop Tech</p>
+              <h2 class="experience-sub-title project-title">
+                ShopItNow &amp; LifeQuality
+              </h2>
+              <p class="lead description">
+                Twin Django e-commerce platforms for home decor and wellness,
+                built from reusable backend patterns.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Shared DRF API layer, reusable components, inventory
+                  management, Stripe checkout, and product admin flows.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>Django, DRF, PostgreSQL, Stripe, reusable API design.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Devloop Tech</p>
+              <h2 class="experience-sub-title project-title">Crime Alert</h2>
+              <p class="lead description">
+                Predictive crime analytics platform with dashboards and
+                ML-based trend forecasting from real crime datasets.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Django dashboard app, dataset ingestion, prediction models,
+                  and interactive safety analytics views.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>Python, Django, ML forecasting, analytics dashboards.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Devloop Tech</p>
+              <h2 class="experience-sub-title project-title">Medi Predict</h2>
+              <p class="lead description">
+                AI-powered disease prediction platform with a conversational
+                health bot and symptom-driven predictions.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Multi-class medical classification models integrated into a
+                  Django app with bot-driven user interaction.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>Python, Django, ML/DL models, medical datasets.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Devicon Software House</p>
+              <h2 class="experience-sub-title project-title">G6PD</h2>
+              <p class="lead description">
+                OCR healthcare safety platform that scans product ingredients
+                and flags compounds unsafe for G6PD users.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  OCR scan flow, ingredient parsing, safety rule matching,
+                  instant feedback, and privacy-aware handling.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>Django, Python, OCR pipeline, healthcare safety rules.</p>
+              </div>
+            </article>
+
+            <article class="details-container color-container project-card">
+              <p class="project-meta">Devicon Software House</p>
+              <h2 class="experience-sub-title project-title">
+                Language Academy
+              </h2>
+              <p class="lead description">
+                Teacher-student marketplace for lesson booking, teacher
+                profiles, session scheduling, and multi-role users.
+              </p>
+              <div class="project-detail">
+                <strong>Architecture</strong>
+                <p>
+                  Laravel marketplace app with normalized relational schema,
+                  multi-role authentication, booking, and scheduling flows.
+                </p>
+              </div>
+              <div class="project-detail">
+                <strong>Tools</strong>
+                <p>Laravel, PHP, SQL, MVC architecture, authentication.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <p class="section__text__p1 eyebrow">Tools I use on real projects</p>
+        <h1 class="title">Technical Stack</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container stack-panel">
+              <div class="article-container">
+                <article class="text-skill"><div><h3>Python</h3></div></article>
+                <article class="text-skill"><div><h3>Django</h3></div></article>
+                <article class="text-skill"><div><h3>FastAPI</h3></div></article>
+                <article class="text-skill"><div><h3>LangChain</h3></div></article>
+                <article class="text-skill"><div><h3>LangGraph</h3></div></article>
+                <article class="text-skill"><div><h3>Vapi</h3></div></article>
+                <article class="text-skill"><div><h3>ElevenLabs</h3></div></article>
+                <article class="text-skill"><div><h3>Deepgram</h3></div></article>
+                <article class="text-skill"><div><h3>Retell AI</h3></div></article>
+                <article class="text-skill"><div><h3>Twilio</h3></div></article>
+                <article class="text-skill"><div><h3>WebSockets</h3></div></article>
+                <article class="text-skill"><div><h3>Apify</h3></div></article>
+                <article class="text-skill"><div><h3>Django Channels</h3></div></article>
+                <article class="text-skill"><div><h3>Pinecone</h3></div></article>
+                <article class="text-skill"><div><h3>Streamlit</h3></div></article>
+                <article class="text-skill"><div><h3>n8n</h3></div></article>
+                <article class="text-skill"><div><h3>Make.com</h3></div></article>
+                <article class="text-skill"><div><h3>Pipecat</h3></div></article>
+                <article class="text-skill"><div><h3>Docker</h3></div></article>
+                <article class="text-skill"><div><h3>Supabase</h3></div></article>
+                <article class="text-skill"><div><h3>GraphQL</h3></div></article>
+                <article class="text-skill"><div><h3>GitHub</h3></div></article>
+                <article class="text-skill"><div><h3>Celery</h3></div></article>
+                <article class="text-skill"><div><h3>Strawberry</h3></div></article>
+                <article class="text-skill"><div><h3>Redis</h3></div></article>
+                <article class="text-skill"><div><h3>Scrapy</h3></div></article>
+                <article class="text-skill"><div><h3>PostgreSQL</h3></div></article>
+                <article class="text-skill"><div><h3>PHP</h3></div></article>
+                <article class="text-skill"><div><h3>Laravel</h3></div></article>
+                <article class="text-skill"><div><h3>Vue</h3></div></article>
+                <article class="text-skill"><div><h3>Machine Learning</h3></div></article>
+                <article class="text-skill"><div><h3>SQL</h3></div></article>
+                <article class="text-skill"><div><h3>MongoDB</h3></div></article>
+                <article class="text-skill"><div><h3>React</h3></div></article>
+                <article class="text-skill"><div><h3>Next.js</h3></div></article>
+                <article class="text-skill"><div><h3>HTML</h3></div></article>
+                <article class="text-skill"><div><h3>CSS</h3></div></article>
+                <article class="text-skill"><div><h3>JavaScript</h3></div></article>
+                <article class="text-skill"><div><h3>Bootstrap</h3></div></article>
+                <article class="text-skill"><div><h3>Hugging Face</h3></div></article>
+                <article class="text-skill"><div><h3>RAG Pipelines</h3></div></article>
+                <article class="text-skill"><div><h3>Multi-Agent Systems</h3></div></article>
+                <article class="text-skill"><div><h3>REST APIs</h3></div></article>
+                <article class="text-skill"><div><h3>Flask</h3></div></article>
+                <article class="text-skill"><div><h3>CrewAI</h3></div></article>
+                <article class="text-skill"><div><h3>ASGI</h3></div></article>
+                <article class="text-skill"><div><h3>PostHog</h3></div></article>
+                <article class="text-skill"><div><h3>LangSmith</h3></div></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1 eyebrow">Get in Touch</p>
+        <h1 class="title">Have a workflow or voice system to build?</h1>
+        <p class="contact-copy">
+          Send me the problem, the current process, and the outcome you want.
+          I will reply with a practical technical path, not a sales pitch.
+        </p>
+        <div class="btn-container contact-actions">
+          <a
+            class="btn btn-color-1"
+            href="mailto:abdullaharshed956@gmail.com?subject=Project%20inquiry%20for%20Abdullah"
+          >
+            Email Abdullah
+          </a>
+          <button class="btn btn-color-2" type="button" data-copy-email>
+            Copy Email
+          </button>
+        </div>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p>
+              <a href="mailto:abdullaharshed956@gmail.com">
+                abdullaharshed956@gmail.com
+              </a>
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/phonebalck.png"
+              alt="Phone icon"
+              class="icon contact-icon"
+            />
+            <p><a href="tel:+923174091061">+92-317-4091061</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
-      <nav>
+      <nav aria-label="Footer navigation">
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#work-history">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 Abdullah Arshed. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Abdullah Arshed. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
